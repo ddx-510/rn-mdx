@@ -137,6 +137,11 @@ const components = (styles: MarkdownStyles = {}) => {
         </Text>
       )
     },
+    strikethrough: ({ children }) => {
+      return (
+        <Text style={[styles.text, styles.strikethrough]}>{children}</Text>
+      )
+    },
     blockquote: ({ children, firstOfType }) => {
       const wrappedChildren = wrapChildren(children, {
         style: styles.text,

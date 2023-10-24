@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@mdx-js/runtime": "^2.0.0-next.9",
-    "react-native-fit-image": "^1.5.5"
+    "react-native-fit-image": "^1.5.5",
+    "remark-gfm": "^4.0.0"
   }
 }
