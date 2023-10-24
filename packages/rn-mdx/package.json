@@ -17,7 +17,7 @@
   ],
   "publishConfig": {},
   "keywords": [],
-  "author": "Daniel Dunderfelt",
+  "author": "Daniel Dunderfelt, ddx0510 and other contributors",
   "license": "MIT",
   "devDependencies": {
     "@types/mdx-js__react": "^1.5.3",
