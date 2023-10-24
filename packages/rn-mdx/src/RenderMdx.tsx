@@ -1,7 +1,6 @@
 import React, { ComponentType, useMemo } from 'react'
 import markdownComponents from './markdownComponents'
 import MDX from '@mdx-js/runtime'
-import remarkGfm from 'remark-gfm'
 import { MarkdownStyles, styles } from './style/styles'
 
 const defaultScope = {}
@@ -21,14 +20,14 @@ export function RenderMdx({
   scope = {},
   componentStyle = {},
   remarkPlugins = [],
-  rehypePlugins = [],
+  rehypePlugins = []
 }: RenderMdxProps) {
   const defaultComponents = useMemo(
     () => markdownComponents(styles(componentStyle)),
     [componentStyle]
   )
 
-  const defaultRemarkPlugins = useMemo(() => [remarkGfm], [])
+  const defaultRemarkPlugins = useMemo(() => [], [])
   const defaultRehypePlugins = useMemo(() => [], [])
 
   const contentScope = { ...defaultScope, ...scope }
