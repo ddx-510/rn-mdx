@@ -2,7 +2,8 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "lib",
-    "declaration": true
+    "declaration": true,
+    "ignoreDeprecations": "5.0"
   },
   "include": ["src", "rn-mdx.d.ts"],
   "exclude": ["node_modules"]
